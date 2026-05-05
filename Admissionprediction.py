@@ -105,11 +105,11 @@ def strategy_optimizer(model, student):
 
     for feature, gain in improvements:
         if gain > 0:
-            print(f"👉 Improve {feature} → +{gain:.3f}")
+            print(f" Improve {feature} → +{gain:.3f}")
             total_gain += gain
 
-    print("\n📈 Total Possible Improvement:", round(total_gain, 3))
-    print("🎯 Optimized Chance:", round(base_score + total_gain, 3))
+    print("\n Total Possible Improvement:", round(total_gain, 3))
+    print(" Optimized Chance:", round(base_score + total_gain, 3))
 
 
 student = {
